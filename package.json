@@ -1,0 +1,44 @@
+{
+    "name": "duplicateselection",
+    "displayName": "DuplicateSelection",
+    "description": "Adds an action that duplicates the current selection.",
+    "version": "1.0.0",
+    "publisher": "kkapsner",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:duplicateselection.action.copySelectionForwardAction",
+        "onCommand:duplicateselection.action.copySelectionBackwardAction"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "duplicateselection.action.copySelectionForwardAction",
+                "title": "Duplicates the selection forward"
+            },
+            {
+                "command": "duplicateselection.action.copySelectionBackwardAction",
+                "title": "Duplicates the selection backward"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
