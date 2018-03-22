@@ -12,6 +12,8 @@ None.
 
 ## Release Notes
 
+### 1.0.1
+
 ### 1.0.0
 
 Initial release of DuplicateSelection. Does nothing else as what is mentioned in the features.

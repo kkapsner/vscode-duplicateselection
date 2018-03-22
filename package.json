@@ -2,7 +2,7 @@
     "name": "duplicateselection",
     "displayName": "DuplicateSelection",
     "description": "Adds an action that duplicates the current selection.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "kkapsner",
     "repository": {
         "type": "git",
