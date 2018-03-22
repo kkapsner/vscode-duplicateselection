@@ -8,6 +8,7 @@
         "type": "git",
         "url": "https://github.com/kkapsner/vscode-duplicateselection.git"
     },
+	"license": "MIT",
     "engines": {
         "vscode": "^1.20.0"
     },

@@ -29,6 +29,7 @@ None.
 
 Minor cleanups:
 * added some documentation
+* added licence
 ### 1.0.0
 
 Initial release of DuplicateSelection. Does nothing else as what is mentioned in the features.
