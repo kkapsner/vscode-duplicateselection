@@ -4,6 +4,10 @@
     "description": "Adds an action that duplicates the current selection.",
     "version": "1.0.0",
     "publisher": "kkapsner",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kkapsner/vscode-duplicateselection.git"
+    },
     "engines": {
         "vscode": "^1.20.0"
     },
