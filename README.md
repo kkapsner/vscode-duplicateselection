@@ -32,6 +32,7 @@ Minor cleanups:
 * added some documentation
 * added licence
 * code cleanup
+* added some tests
 
 ### 1.0.0
 

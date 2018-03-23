@@ -8,7 +8,7 @@
         "type": "git",
         "url": "https://github.com/kkapsner/vscode-duplicateselection.git"
     },
-	"license": "MIT",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.20.0"
     },
@@ -40,10 +40,12 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "tslint": "^5.8.0",
+        "@types/chai": "^4.1.2",
+        "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "chai": "^4.1.2",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6"
     }
 }
