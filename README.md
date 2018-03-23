@@ -19,6 +19,7 @@ To get a behaviour similar to SublimeText or Notepad++ you can use the following
 	"when": "editorTextFocus && !editorReadonly && editorHasSelection"
 }
 ```
+
 ## Requirements
 
 None.
@@ -30,6 +31,8 @@ None.
 Minor cleanups:
 * added some documentation
 * added licence
+* code cleanup
+
 ### 1.0.0
 
 Initial release of DuplicateSelection. Does nothing else as what is mentioned in the features.

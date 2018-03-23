@@ -1,16 +1,8 @@
 'use strict';
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
-    // The command has been defined in the package.json file
-    // Now provide the implementation of the command with  registerCommand
-    // The commandId parameter must match the command field in package.json
+    // register the forward copy command
     let forwardCommand = vscode.commands.registerTextEditorCommand(
         'duplicateselection.action.copySelectionForwardAction',
         (editor, edit) => {
@@ -22,10 +14,14 @@ export function activate(context: vscode.ExtensionContext) {
     );
     context.subscriptions.push(forwardCommand);
     
+    // register the backward copy command
     let backwardCommand = vscode.commands.registerTextEditorCommand(
         'duplicateselection.action.copySelectionBackwardAction',
         (editor) => {
             let positions: {anchor: vscode.Position, active: vscode.Position}[] = [];
+            
+            // We cannot use the editorEdit provided from registerTextEditorCommand because it's
+            // not possible to controll the selection with that.
             editor.edit((edit)=>{
                 editor.selections.forEach((selection) => {
                     const text = editor.document.getText(selection);
@@ -48,7 +44,6 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(backwardCommand);
 }
 
-// this method is called when your extension is deactivated
-export function deactivate(){
-    
-}
+// this extension does not need to do anything on deactivation
+// the commands are removed automatically
+// export function deactivate(){}
