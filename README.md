@@ -38,3 +38,7 @@ Minor cleanups:
 ### 1.0.0
 
 Initial release of DuplicateSelection. Does nothing else as what is mentioned in the features.
+
+## Known Issues
+
+When using duplicateselection.action.copySelectionBackwardAction the message ```"Edits from command duplicateselection.action.copySelectionBackwardAction were not applied."``` is displayed in the terminal.
