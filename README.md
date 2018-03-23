@@ -4,7 +4,7 @@ This extension adds an action to vscode to duplicate the current selection.
 
 ## Features
 
-Adds the action duplicateselection.action.copySelectionForwardAction and duplicateselection.actioncopySelectionBackwardAction
+Adds the action duplicateselection.action.copySelectionForwardAction and duplicateselection.action.copySelectionBackwardAction
 
 To get a behaviour similar to SublimeText or Notepad++ you can use the following in your keybindings.json:
 ```
