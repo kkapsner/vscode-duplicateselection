@@ -33,6 +33,7 @@ Minor cleanups:
 * added licence
 * code cleanup
 * added some tests
+* removed bug with multiple selection in backward copy
 
 ### 1.0.0
 
